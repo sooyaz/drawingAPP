@@ -10,19 +10,9 @@ import { useEffect } from 'react';
 
 function DrawingToolBar() {
   const [fabricCanvas, currentTOOL, setCurrentTOOL] = drawingStore(state =>[state.fabricCanvas, state.currentTOOL, state.setCurrentTOOL], shallow);
-  // if(!canvas) return;
-
-  // const {
-  //   _changeAction
-  // } = useTool();
+  
   useTool();
-  // useEffect(()=>{
-  //   console.log("!!캔버스!!", fabricCanvas)
-  //   const canvas2 = fabricCanvas;
-  // }, [fabricCanvas])
-
-  // useEffect(()=>{console.log("여기만적용?")}, [currentTOOL])
-
+  
   return(
     <div>
       <p>툴바 !!</p>
